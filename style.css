@@ -1,0 +1,60 @@
+@font-face {
+    font-family: odiNorse;
+    src: url(Norse-Bold.otf);
+}
+
+html{
+    background-color: cornsilk;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.photo-bar{
+    display: flex;
+    flex-direction: column;
+    background: url(nate-bell-M1gaxG1UN1E-unsplash.jpg) no-repeat center center;
+    width: 50%;
+
+    background-size: cover;
+    justify-content: space-around;
+    color: cornsilk;
+}
+
+.photo-bar>div{
+    background-color: rgba(34, 67, 18, 0.5);
+}
+
+.photo-bar a{
+    color: rgb(231, 251, 221);
+}
+
+
+.logo{
+    width: 20vh;
+    height: auto;
+}
+
+.photo-bar-footer{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+.photo-bar-footer p{
+    margin: 1px;
+    padding: 1px;
+}
+
+.logo-bar{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: odiNorse, sans-serif;
+    font-size: 52px;
+}
