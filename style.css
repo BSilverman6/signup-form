@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 @font-face {
     font-family: odiNorse;
     src: url(Norse-Bold.otf);
@@ -5,11 +8,11 @@
 
 html{
     background-color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     display: flex;
-    height: 100vh;
     margin: 0;
 }
 
@@ -17,15 +20,17 @@ body{
     display: flex;
     flex-direction: column;
     background: url(nate-bell-M1gaxG1UN1E-unsplash.jpg) no-repeat center center;
-    width: 50%;
-
     background-size: cover;
     justify-content: space-around;
     color: cornsilk;
+    min-width: 50vw;
 }
 
-.photo-bar>div{
-    background-color: rgba(34, 67, 18, 0.5);
+.logo-bar{
+    background-color: rgba(34, 67, 18, 0.6);
+}
+.photo-bar-footer{
+    background-color: rgba(34, 67, 18, 0.25);
 }
 
 .photo-bar a{
@@ -34,7 +39,7 @@ body{
 
 
 .logo{
-    width: 20vh;
+    width: 100px;
     height: auto;
 }
 
@@ -55,6 +60,104 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-family: odiNorse, sans-serif;
-    font-size: 52px;
+    font-family: odiNorse;
+    font-size: 50px;
+}
+
+.company{
+    text-align:end;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.sign-up-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+p{
+    font-weight: 600;
+}
+
+.mid-bar{
+    background-color: rgb(255, 252, 238);
+    display: flex;
+}
+
+.mid-bar-left{
+    max-width: 450px;
+}
+
+.mid-bar-right{
+    flex-grow: 1;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-content: flex-start;
+}
+.form-entry{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    max-width: 200px;
+    position: relative;
+}
+
+.no-PWD-match{
+    position: absolute;
+    top: 45px;
+    line-height: 10px;
+    font-size: 10px;
+    color: red;
+}
+
+label{
+    margin-bottom: 1px;
+}
+
+.upper-bar, .mid-bar, .lower-bar{
+    padding:  20px; ;
+}
+
+.lower-bar p{
+    font-weight: 300;
+    font-size: small;
+}
+
+button{
+    padding: 10px;
+    border-radius: 5px;
+    color: cornsilk;
+    background-color: rgb(34, 67, 18);
+    border: none;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: rgba(34, 67, 18, 0.5);
+    color: rgb(255, 236, 160);
+
+}
+
+button:disabled{
+    background-color: rgba(34, 67, 18, 0.5);
+    color: rgb(136, 1, 1);
+}
+
+input{
+    border: 1px solid rgb(185, 225, 165);
+    border-radius: 5px;
+}
+input:focus{
+    box-shadow: 2px 2px 2px rgba(34, 67, 18, 0.5) ;
+    border: 2px solid rgb(185, 225, 165);
+    outline: none;
+
+}
+input:invalid{
+    border-color: red;
 }

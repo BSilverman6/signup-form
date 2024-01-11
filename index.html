@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
 </head>
 <body>
     <div class="photo-bar">
         <div class="logo-bar">
             <img class=logo src="lion.png" alt="Lion Head Logo"> 
-            <span class="company">Ba Bekah</span>
+            <div class="company">Ba Bekah</div>
         </div>
         <div class="photo-bar-footer">
             <p>Photo by <a href="https://unsplash.com/@n8bell34?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nate Bell</a> on <a href="https://unsplash.com/photos/green-leafed-plants-M1gaxG1UN1E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
@@ -19,16 +20,48 @@
     </div>
     <div class="sign-up-bar">
         <div class="upper-bar">
-
+            <p>Welcome to my services page. I am a devout follower of Seabourne Co. and I hope that you can be to.
+                By signing up for my services, I will preach the gospel to you in exchange for any combination of the
+                following: Canned Food, Spa Treatments, Greenies, Lax-Air, or Cuddles. No Surprises, Please.
+            </p>
+            <p> You <em>know</em> you want to...</p>
         </div>
         <div class="mid-bar">
-            <h1>I'm in (for Life)!</h1>
-            <form action="" method="post" id="formSU">
-
-            </form>
+            <div class="mid-bar-left">
+                <p>I'm in (for Life)!</p>
+                <form action="" method="post" id="formSU">
+                    <div class="form-entry">
+                        <label for="user-first-name">First Name</label>
+                        <input type="text" id="user-first-name" name="user-first-name">
+                    </div>
+                    <div class="form-entry">
+                        <label for="user-last-name">Last Name</label>
+                        <input type="text" id="user-last-name" name="user-last-name">
+                    </div>
+                    <div class="form-entry">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" id="user-email" name="user-email">
+                    </div>
+                    <div class="form-entry">
+                        <label for="user-phone">Phone Number</label>
+                        <input type="tel" id="user-phone" name="user-phone">
+                    </div>
+                    <div class="form-entry">
+                        <label for="user-password">Password</label>
+                        <input type="password" id="user-password" name="user-password" minlength="1" required>
+                        <div class="no-PWD-match">*Passwords Do Not Match</div>
+                    </div>
+                    <div class="form-entry">
+                        <label for="user-password-confirm">Confirm Pasword</label>
+                        <input type="password" id="user-password-confirm" minlength="1" required>
+                    </div>
+                </form>
+            </div>
+            <div class="mid-bar-right">
+            </div>
         </div>
         <div class="lower-bar">
-            <button type="submit" form="formSU">Sign Me Up!</button>
+            <button type="submit" form="formSU" class="form-submit">Create an Account</button>
             <p>
                 Already Have an Account? 
                 <a href="">Sign In</a>.
