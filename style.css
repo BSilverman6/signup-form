@@ -143,11 +143,6 @@ button:hover{
 
 }
 
-button:disabled{
-    background-color: rgba(34, 67, 18, 0.5);
-    color: rgb(136, 1, 1);
-}
-
 input{
     border: 1px solid rgb(185, 225, 165);
     border-radius: 5px;
@@ -160,4 +155,19 @@ input:focus{
 }
 input:invalid{
     border-color: red;
+}
+
+@media only screen and (max-width: 540px){
+    body{
+        flex-direction: column;
+    }
+
+    .form-entry{
+        width: 80vw;
+    }
+
+    .photo-bar{
+        height: 75vh;
+    }
+
 }
